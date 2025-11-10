@@ -15,3 +15,4 @@
 /home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.pdb
 /home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.genruntimeconfig.cache
 /home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ref/ProductCatalog.Infrastructure.dll
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.sourcelink.json

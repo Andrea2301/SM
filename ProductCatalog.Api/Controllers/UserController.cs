@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.Application;
+using ProductCatalog.Application.Dtos;
+using ProductCatalog.Domain.Entities;
 using ProductCatalog.Domain.Interfaces;
 
 namespace ProductCatalog.Api.Controllers;
@@ -37,5 +39,54 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
+      //Create a new user 
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] UserCreateDto userCreateDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
 
+        var user = new Users
+        {
+            Username = userCreateDto.Username,
+            Email = userCreateDto.Email,
+            Password = userCreateDto.Password,
+
+        };
+        
+        var createUser = await _userService.AddUser(user);
+        return CreatedAtAction(nameof(GetById), new { id = createUser.Id }, createUser);
+    }
+
+    [HttpPut("Update/{id:int}")]
+    public async Task<IActionResult> Update(int id, [FromBody] UserCreateDto userCreateDto)
+    {
+        if (ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var exist = await _userService.GetUserById(id);
+        if (exist == null)
+            return NotFound(new { message = $"Error updating user {id}" });
+        
+        exist.Username =  userCreateDto.Username;
+        exist.Email = userCreateDto.Email;
+        exist.Password = userCreateDto.Password;
+
+        var updated = await _userService.UpdateUser(exist);
+        
+        if (!updated )
+            return NotFound(new { message = $"Error updating user {id}" });
+        return Ok(updated);
+    }
+
+
+    [HttpDelete("Delete/{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var deleted = await _userService.DeleteUser(id);
+        
+        if (!deleted)
+            return NotFound(new { message = $"Error deleting user {id}" });
+        return Ok(deleted);
+    }
 }

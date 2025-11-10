@@ -139,3 +139,4 @@
 /home/cami/RiderProjects/System/ProductCatalog.Api/obj/Debug/net8.0/ProductCatalog.Api.pdb
 /home/cami/RiderProjects/System/ProductCatalog.Api/obj/Debug/net8.0/ProductCatalog.Api.genruntimeconfig.cache
 /home/cami/RiderProjects/System/ProductCatalog.Api/obj/Debug/net8.0/ref/ProductCatalog.Api.dll
+/home/cami/RiderProjects/System/ProductCatalog.Api/obj/Debug/net8.0/ProductCatalog.Api.sourcelink.json

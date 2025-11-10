@@ -71,7 +71,7 @@ public class ProductController : ControllerBase
             return BadRequest(ModelState);
 
         var exits = await _productService.GetProductById(id);
-        if (exits == null)
+        if (exits ==null)
             return NotFound(new { message = $"Product with ID {id} not found" });
         
         exits.Name = productDto.Name;
