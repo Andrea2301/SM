@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/home/cami/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.21/ref/net8.0/Microsoft.AspNetCore.dll" /&gt;
+  &lt;Assembly Path="/home/cami/.nuget/packages/microsoft.netcore.app.ref/8.0.21/ref/net8.0/Microsoft.CSharp.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">/usr/lib/dotnet/sdk/8.0.121/MSBuild.dll</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/DotNetCliExePath/@EntryValue">/usr/lib/dotnet/dotnet</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,17 @@
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Infrastructure.deps.json
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Infrastructure.runtimeconfig.json
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Infrastructure.dll
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Infrastructure.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Domain.dll
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/bin/Debug/net8.0/ProductCatalog.Domain.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.csproj.AssemblyReference.cache
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.AssemblyInfoInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.AssemblyInfo.cs
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.csproj.CoreCompileInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.csproj.CopyComplete
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.dll
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/refint/ProductCatalog.Infrastructure.dll
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ProductCatalog.Infrastructure.genruntimeconfig.cache
+/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/Debug/net8.0/ref/ProductCatalog.Infrastructure.dll

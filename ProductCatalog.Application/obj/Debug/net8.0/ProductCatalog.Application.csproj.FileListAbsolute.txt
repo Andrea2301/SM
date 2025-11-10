@@ -1,0 +1,17 @@
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Application.deps.json
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Application.runtimeconfig.json
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Application.dll
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Application.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Domain.dll
+/home/cami/RiderProjects/System/ProductCatalog.Application/bin/Debug/net8.0/ProductCatalog.Domain.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.csproj.AssemblyReference.cache
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.AssemblyInfoInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.AssemblyInfo.cs
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.csproj.CoreCompileInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.csproj.CopyComplete
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.dll
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/refint/ProductCatalog.Application.dll
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ProductCatalog.Application.genruntimeconfig.cache
+/home/cami/RiderProjects/System/ProductCatalog.Application/obj/Debug/net8.0/ref/ProductCatalog.Application.dll

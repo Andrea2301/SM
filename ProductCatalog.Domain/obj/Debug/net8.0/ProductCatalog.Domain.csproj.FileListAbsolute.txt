@@ -1,0 +1,14 @@
+/home/cami/RiderProjects/System/ProductCatalog.Domain/bin/Debug/net8.0/ProductCatalog.Domain.deps.json
+/home/cami/RiderProjects/System/ProductCatalog.Domain/bin/Debug/net8.0/ProductCatalog.Domain.runtimeconfig.json
+/home/cami/RiderProjects/System/ProductCatalog.Domain/bin/Debug/net8.0/ProductCatalog.Domain.dll
+/home/cami/RiderProjects/System/ProductCatalog.Domain/bin/Debug/net8.0/ProductCatalog.Domain.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.csproj.AssemblyReference.cache
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.AssemblyInfoInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.AssemblyInfo.cs
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.csproj.CoreCompileInputs.cache
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.dll
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/refint/ProductCatalog.Domain.dll
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.pdb
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ProductCatalog.Domain.genruntimeconfig.cache
+/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/Debug/net8.0/ref/ProductCatalog.Domain.dll
