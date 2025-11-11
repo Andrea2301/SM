@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/cami/RiderProjects/System/ProductCatalog.Api/ProductCatalog.Api.csproj": {}
+    "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Api\\ProductCatalog.Api.csproj": {}
   },
   "projects": {
-    "/home/cami/RiderProjects/System/ProductCatalog.Api/ProductCatalog.Api.csproj": {
+    "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Api\\ProductCatalog.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cami/RiderProjects/System/ProductCatalog.Api/ProductCatalog.Api.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Api\\ProductCatalog.Api.csproj",
         "projectName": "ProductCatalog.Api",
-        "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Api/ProductCatalog.Api.csproj",
-        "packagesPath": "/home/cami/.nuget/packages/",
-        "outputPath": "/home/cami/RiderProjects/System/ProductCatalog.Api/obj/",
+        "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Api\\ProductCatalog.Api.csproj",
+        "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cami/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cami/RiderProjects/System/ProductCatalog.Application/ProductCatalog.Application.csproj": {
-                "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Application/ProductCatalog.Application.csproj"
+              "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\ProductCatalog.Application.csproj": {
+                "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\ProductCatalog.Application.csproj"
               },
-              "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/ProductCatalog.Infrastructure.csproj": {
-                "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/ProductCatalog.Infrastructure.csproj"
+              "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\ProductCatalog.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\ProductCatalog.Infrastructure.csproj"
               }
             }
           }
@@ -39,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -63,13 +75,17 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.5.1, )"
+              "version": "[8.14.0, )"
             }
           },
           "imports": [
@@ -91,34 +107,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cami/RiderProjects/System/ProductCatalog.Application/ProductCatalog.Application.csproj": {
+    "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\ProductCatalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cami/RiderProjects/System/ProductCatalog.Application/ProductCatalog.Application.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\ProductCatalog.Application.csproj",
         "projectName": "ProductCatalog.Application",
-        "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Application/ProductCatalog.Application.csproj",
-        "packagesPath": "/home/cami/.nuget/packages/",
-        "outputPath": "/home/cami/RiderProjects/System/ProductCatalog.Application/obj/",
+        "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\ProductCatalog.Application.csproj",
+        "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cami/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj": {
-                "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj"
+              "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               }
             }
           }
@@ -127,7 +149,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -143,9 +171,17 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
             },
             "jose-jwt": {
               "target": "Package",
@@ -168,26 +204,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj": {
+    "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
         "projectName": "ProductCatalog.Domain",
-        "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj",
-        "packagesPath": "/home/cami/.nuget/packages/",
-        "outputPath": "/home/cami/RiderProjects/System/ProductCatalog.Domain/obj/",
+        "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cami/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -200,7 +242,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -216,9 +264,17 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
             },
             "jose-jwt": {
               "target": "Package",
@@ -241,34 +297,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/ProductCatalog.Infrastructure.csproj": {
+    "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\ProductCatalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/ProductCatalog.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\ProductCatalog.Infrastructure.csproj",
         "projectName": "ProductCatalog.Infrastructure",
-        "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/ProductCatalog.Infrastructure.csproj",
-        "packagesPath": "/home/cami/.nuget/packages/",
-        "outputPath": "/home/cami/RiderProjects/System/ProductCatalog.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\ProductCatalog.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cami/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj": {
-                "projectPath": "/home/cami/RiderProjects/System/ProductCatalog.Domain/ProductCatalog.Domain.csproj"
+              "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\camil\\source\\repos\\SM\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               }
             }
           }
@@ -277,7 +339,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -297,9 +365,17 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
             },
             "jose-jwt": {
               "target": "Package",
@@ -322,7 +398,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

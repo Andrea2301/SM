@@ -49,8 +49,60 @@ namespace ProductCatalog.Api.Controllers
             if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.Password))
                 return Unauthorized(new { message = "Credenciales inválidas" });
 
-            var token = GenerateJwtToken(user);
-            return Ok(new { token });
+            var accessToken = GenerateJwtToken(user);
+            var refreshToken = GenerateRefreshToken();
+
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userService.UpdateUser(user);
+
+            return Ok(new
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken
+            });
+        }
+
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh([FromBody] TokenRequest request)
+        {
+            if (request is null)
+                return BadRequest("Petición inválida.");
+
+            var users = await _userService.GetAllUsers();
+            var user = users.FirstOrDefault(u => u.RefreshToken == request.RefreshToken);
+
+            if (user == null || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+                return Unauthorized(new { message = "Refresh token inválido o expirado" });
+
+            var newAccessToken = GenerateJwtToken(user);
+            var newRefreshToken = GenerateRefreshToken();
+
+            user.RefreshToken = newRefreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userService.UpdateUser(user);
+
+            return Ok(new
+            {
+                AccessToken = newAccessToken,
+                RefreshToken = newRefreshToken
+            });
+        }
+
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout([FromBody] string email)
+        {
+            var users = await _userService.GetAllUsers();
+            var user = users.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
+                return NotFound("Usuario no encontrado.");
+
+            user.RefreshToken = null;
+            user.RefreshTokenExpiryTime = null;
+            await _userService.UpdateUser(user);
+
+            return Ok(new { message = "Sesión cerrada correctamente" });
         }
 
         private string GenerateJwtToken(User user)
@@ -64,6 +116,7 @@ namespace ProductCatalog.Api.Controllers
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
             var token = new JwtSecurityToken(
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
@@ -74,5 +127,18 @@ namespace ProductCatalog.Api.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        private static string GenerateRefreshToken()
+        {
+            var randomBytes = new byte[32];
+            using var rng = new System.Security.Cryptography.RNGCryptoServiceProvider();
+            rng.GetBytes(randomBytes);
+            return Convert.ToBase64String(randomBytes);
+        }
+    }
+
+    public class TokenRequest
+    {
+        public string RefreshToken { get; set; }
     }
 }
