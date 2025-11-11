@@ -46,7 +46,7 @@ public class UserController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var user = new Users
+        var user = new User
         {
             Username = userCreateDto.Username,
             Email = userCreateDto.Email,
@@ -79,6 +79,7 @@ public class UserController : ControllerBase
         return Ok(updated);
     }
 
+    // Delete user by ID
 
     [HttpDelete("Delete/{id:int}")]
     public async Task<IActionResult> Delete(int id)

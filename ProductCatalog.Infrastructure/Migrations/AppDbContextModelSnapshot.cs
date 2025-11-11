@@ -33,22 +33,23 @@ namespace ProductCatalog.Infrastructure.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(65,30)");
 
-                    b.Property<int>("UsersId")
+                    b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsersId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Domain.Entities.Users", b =>
+            modelBuilder.Entity("ProductCatalog.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,15 +58,19 @@ namespace ProductCatalog.Infrastructure.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Role")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
@@ -75,16 +80,14 @@ namespace ProductCatalog.Infrastructure.Migrations
 
             modelBuilder.Entity("ProductCatalog.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("ProductCatalog.Domain.Entities.Users", "users")
+                    b.HasOne("ProductCatalog.Domain.Entities.User", "User")
                         .WithMany("Products")
-                        .HasForeignKey("UsersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("users");
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Domain.Entities.Users", b =>
+            modelBuilder.Entity("ProductCatalog.Domain.Entities.User", b =>
                 {
                     b.Navigation("Products");
                 });

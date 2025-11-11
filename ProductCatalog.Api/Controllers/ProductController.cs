@@ -45,7 +45,7 @@ public class ProductController : ControllerBase
 
     public async Task<IActionResult> AddProduct([FromBody] ProductCreateDto productDto) //[FromBody] force the Web API to read a simple type from the request body
     {
-        if (ModelState.IsValid)
+        if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
         

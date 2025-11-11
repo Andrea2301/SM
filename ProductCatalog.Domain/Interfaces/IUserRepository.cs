@@ -1,13 +1,13 @@
 using ProductCatalog.Domain.Entities;
 
-namespace ProductCatalog.Domain.Interfaces;
-
-public interface IUserRepository 
+namespace ProductCatalog.Domain.Interfaces
 {
-    Task<Users> GetUsersById(int id);
-    Task<List<Users>> GetAll();
-    Task<Users> Add(Users user);
-    Task<Users> Update(Users user);
-    Task Delete(int id);
-    
+    public interface IUserRepository
+    {
+        Task<User?> GetUserById(int id);
+        Task<List<User>> GetAll();
+        Task<User> Add(User user);
+        Task Update(User user);
+        Task Delete(int id);
+    }
 }
