@@ -17,44 +17,6 @@ This API simulates a simple product management system with different user roles:
 
 ---
 
-##  Architecture
-
-ProductCatalog/
-│
-├── ProductCatalog.Domain/               # Entities and Interfaces (Core domain)
-│   ├── Entities/
-│   │   ├── User.cs
-│   │   └── Product.cs
-│   └── Interfaces/
-│       ├── IUserRepository.cs
-│       └── IProductRepository.cs
-│
-├── ProductCatalog.Application/          # Business logic (Services, DTOs, Validation)
-│   ├── Services/
-│   │   ├── UserService.cs
-│   │   └── ProductService.cs
-│   └── Dtos/
-│       ├── UserDto.cs
-│       └── ProductDto.cs
-│
-├── ProductCatalog.Infrastructure/       # Data access (Repositories, EF DbContext)
-│   ├── Data/
-│   │   └── AppDbContext.cs
-│   └── Repositories/
-│       ├── UserRepository.cs
-│       └── ProductRepository.cs
-│
-├── ProductCatalog.Api/                  # API Layer (Controllers, Auth, Program.cs)
-│   ├── Controllers/
-│   │   ├── AuthController.cs
-│   │   ├── ProductController.cs
-│   │   └── UserController.cs
-│   ├── Program.cs
-│   └── appsettings.json
-│
-└── README.md
----
-
 ##  Technologies Used
 
 -  **.NET 8**
