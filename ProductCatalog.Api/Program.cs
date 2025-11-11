@@ -10,7 +10,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 //  Connection String
-var connectionString = builder.Configuration.GetConnectionString("Default");
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__Default") ?? builder.Configuration.GetConnectionString("Default");
 
 //  DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
