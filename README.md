@@ -53,7 +53,6 @@ ProductCatalog/
 │   └── appsettings.json
 │
 └── README.md
-
 ---
 
 ##  Technologies Used
