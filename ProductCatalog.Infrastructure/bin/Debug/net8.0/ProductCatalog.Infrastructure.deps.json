@@ -674,10 +674,7 @@
           "jose-jwt": "5.2.0"
         },
         "runtime": {
-          "ProductCatalog.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ProductCatalog.Domain.dll": {}
         }
       }
     }
