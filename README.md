@@ -113,6 +113,7 @@ The API uses **JWT Bearer Authentication**.
 |---------|------------------------|-----------------------|
 | POST    | `/api/Auth/register`   | Register a new user   |
 | POST    | `/api/Auth/login`      | Login and receive JWT |
+| POST    | `/api/Auth/login`      | Login and receive JWT |
 
 **Example – Login Response:**
 
