@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer; 
+using Microsoft.AspNetCore.Authentication.JwtBearer; 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens; 
 using ProductCatalog.Application;
@@ -47,6 +47,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy => policy.WithOrigins("http://localhost:5174")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 var app = builder.Build();
 
 //  Middleware
@@ -61,7 +71,7 @@ app.UseHttpsRedirection();
 // add autentication and authorization middlewares
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseCors("AllowLocalhost");
 app.MapControllers();
 
 app.Run();
